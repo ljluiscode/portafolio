@@ -188,3 +188,10 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+//PWA
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('/js/sw.js')
+    .then(reg => console.log('Registro de SW exitoso',reg))
+    .catch(err => console.warn('Error al tratar de registrar el sw',err))
+}
