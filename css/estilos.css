@@ -514,6 +514,10 @@ img{
     width: 80%;
 }
 
+.skills__java{
+    width: 80%;
+}
+
 .skills__node{
     width: 70%;
 }
@@ -1078,7 +1082,6 @@ img{
     }
 
     .about__container,
-    .skills__container,
     .portfolio__content,
     .project__container,
     .contact__container,
